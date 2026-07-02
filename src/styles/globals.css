@@ -10,7 +10,13 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: Inter, Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+
+  font-family: "Outfit", sans-serif;
+  line-height: 1.6;
+
+  overflow-x: hidden;
 }
 
 a {
