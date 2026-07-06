@@ -178,3 +178,47 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: auto;
+    padding-top: 2rem;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+
+    text-align: center;
+  }
+
+  .hero-avatar {
+    width: 220px;
+    height: 220px;
+    font-size: 4rem;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-role {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    margin: 0 auto 2rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+}
