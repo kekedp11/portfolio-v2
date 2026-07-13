@@ -60,10 +60,36 @@
   background: var(--primary-color);
 
   color: white;
+
+  box-shadow: 0 12px 30px rgba(99,102,241,.25);
 }
 
 .footer-copy {
   color: var(--text-secondary);
 
   font-size: .9rem;
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 2.5rem 0;
+  }
+
+  .footer-logo {
+    font-size: 1.8rem;
+  }
+
+  .footer-text {
+    font-size: .95rem;
+  }
+
+  .footer-copy {
+    font-size: .85rem;
+  }
+
 }

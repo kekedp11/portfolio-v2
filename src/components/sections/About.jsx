@@ -23,7 +23,11 @@ function About() {
               Express, and REST APIs.
             </p>
 
-            <a href="#" className="btn btn-primary">
+            <a
+              href="/Keke-Pradipta-Resume.pdf"
+              download
+              className="btn btn-primary"
+            >
               Download Resume
             </a>
           </div>

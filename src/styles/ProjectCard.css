@@ -1,5 +1,6 @@
 .project-card {
   background: var(--surface-color);
+  display: flex;
 
   border: 1px solid var(--border-color);
   border-radius: 18px;
@@ -16,6 +17,10 @@
 }
 
 .project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
   padding: 2rem;
 }
 
@@ -56,4 +61,38 @@
 .project-links {
   display: flex;
   gap: 1rem;
+  margin-top: auto;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 992px) {
+
+  .project-content {
+    padding: 1.75rem;
+  }
+
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+  .project-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-links .btn {
+    width: 100%;
+  }
+
 }

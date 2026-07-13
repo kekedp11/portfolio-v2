@@ -1,5 +1,11 @@
 import "../../styles/Contact.css";
 
+import {
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
+
 function Contact() {
   return (
     <section id="contact" className="section contact">
@@ -18,9 +24,9 @@ function Contact() {
         <div className="contact-content">
 
           <p className="contact-description">
-            I'm currently looking for junior frontend/fullstack
-            opportunities and I'm always open to freelance work
-            or exciting collaborations.
+            I'm currently looking for Junior Frontend or Fullstack
+            Developer opportunities. I'm also open to freelance
+            work and exciting collaborations.
           </p>
 
           <div className="contact-links">
@@ -29,7 +35,7 @@ function Contact() {
               href="mailto:kekedp11@gmail.com"
               className="contact-item"
             >
-              📧
+              <FaEnvelope />
               <span>kekedp11@gmail.com</span>
             </a>
 
@@ -39,7 +45,7 @@ function Contact() {
               rel="noopener noreferrer"
               className="contact-item"
             >
-              💻
+              <FaGithub />
               <span>GitHub</span>
             </a>
 
@@ -49,7 +55,7 @@ function Contact() {
               rel="noopener noreferrer"
               className="contact-item"
             >
-              💼
+              <FaLinkedin />
               <span>LinkedIn</span>
             </a>
 

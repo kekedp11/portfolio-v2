@@ -4,12 +4,35 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: clamp(1.5rem, 3vw, 2rem);
 }
 
 @media (max-width:768px) {
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 992px) {
+
+  .projects-grid {
+    gap: 1.5rem;
+  }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
 
   .projects-grid {
     grid-template-columns: 1fr;

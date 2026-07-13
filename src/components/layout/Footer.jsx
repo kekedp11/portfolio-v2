@@ -15,7 +15,7 @@ function Footer() {
         </h2>
 
         <p className="footer-text">
-          Built with React, Node.js, Express, and MongoDB.
+          Built with React, Vite, Node.js, Express, and MongoDB.
         </p>
 
         <div className="footer-socials">

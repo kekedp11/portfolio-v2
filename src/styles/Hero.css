@@ -10,11 +10,11 @@
   );
 }
 
-.hero-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 4rem;
+.hero-container{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  align-items:center;
+  gap:clamp(2rem,5vw,4rem);
 }
 
 .hero-subtitle {
@@ -27,7 +27,7 @@
 .hero-title {
   margin-bottom: 1rem;
 
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 8vw, 4rem);
   line-height: 1.1;
 }
 
@@ -49,11 +49,12 @@
   margin-bottom: 1.5rem;
 
   color: var(--text-secondary);
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 5vw, 2rem);
 }
 
 .hero-description {
-  max-width: 540px;
+  max-width:560px;
+  color:var(--text-secondary);
   margin-bottom: 2rem;
 
   line-height: 1.8;
@@ -86,7 +87,11 @@
   color: var(--text-color);
   font-size: 1.2rem;
 
-  transition: var(--transition);
+  transition:
+    transform .3s ease,
+    border-color .3s ease,
+    box-shadow .3s ease,
+    color .3s ease;
 }
 
 .hero-socials a:hover {
@@ -103,7 +108,7 @@
   align-items: center;
   justify-content: center;
 
-  padding: 0.9rem 1.8rem;
+  padding:1rem 2rem;
   border-radius: 10px;
 
   font-weight: 600;
@@ -136,18 +141,22 @@
 .hero-image {
   display: flex;
   justify-content: center;
+  align-items:center;
 }
 
 .hero-avatar {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation:floating 5s ease-in-out infinite;
 
   transition: transform 0.3s ease,
               box-shadow 0.3s ease;
 
-  width: 320px;
-  height: 320px;
+  width: min(320px, 70vw);
+  height: min(320px, 70vw);
+
+  aspect-ratio: 1;
   border-radius: 50%;
 
   background: var(--surface-color);
@@ -179,11 +188,11 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
 
   .hero {
     min-height: auto;
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
 
   .hero-container {
@@ -195,13 +204,13 @@
   }
 
   .hero-avatar {
-    width: 220px;
-    height: 220px;
-    font-size: 4rem;
+    width: 200px;
+    height: 200px;
+    font-size: 3.5rem;
   }
 
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   .hero-role {
@@ -211,14 +220,52 @@
   .hero-description {
     max-width: 100%;
     margin: 0 auto 2rem;
+    font-size:.95rem;
   }
 
   .hero-buttons {
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap:.75rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-socials {
     justify-content: center;
+    margin-top:2.5rem;
   }
+}
+
+@media (max-width:992px){
+
+.hero-container{
+
+gap:2.5rem;
+
+}
+
+.hero-title{
+
+font-size:3.2rem;
+
+}
+
+.hero-avatar{
+
+width:260px;
+height:260px;
+
+}
+
 }
