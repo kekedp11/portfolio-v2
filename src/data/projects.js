@@ -1,9 +1,28 @@
 export const featuredProjects = [
   {
+    title: "Job Tracker",
+
+    description:
+      "A full-stack job application tracker featuring JWT authentication, CRUD operations, search, filtering, and a responsive dashboard for managing job applications.",
+
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+    ],
+
+    github: "https://github.com/kekedp11/job-tracker",
+
+    demo: "https://job-tracker-tau-olive.vercel.app",
+  },
+
+  {
     title: "Expense Tracker",
 
     description:
-      "A fullstack expense tracking application that helps users manage income and expenses with a clean dashboard and REST API integration.",
+      "A full-stack expense tracking application that helps users manage income and expenses through a clean dashboard with REST API integration.",
 
     tech: [
       "React",
@@ -22,7 +41,7 @@ export const featuredProjects = [
     title: "Notes App",
 
     description:
-      "A fullstack notes application that allows users to create, edit, and delete notes with persistent MongoDB storage.",
+      "A full-stack notes application that allows users to create, edit, and delete notes with persistent MongoDB storage.",
 
     tech: [
       "React",
@@ -40,7 +59,7 @@ export const featuredProjects = [
     title: "Task App",
 
     description:
-      "A fullstack task management application featuring CRUD operations and persistent data storage using MongoDB.",
+      "A full-stack task management application featuring CRUD operations with persistent MongoDB storage.",
 
     tech: [
       "React",
