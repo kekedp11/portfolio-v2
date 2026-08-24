@@ -1,5 +1,24 @@
 export const featuredProjects = [
   {
+    title: "E-Commerce",
+
+    description:
+      "A full-stack e-commerce application with JWT authentication, shopping cart management, checkout and order processing, order tracking, role-based admin features, and production deployment.",
+
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+    ],
+
+    github: "https://github.com/kekedp11/ecommerce",
+
+    demo: "https://ecommerce-five-peach-64.vercel.app/",
+  },
+
+  {
     title: "Job Tracker",
 
     description:
