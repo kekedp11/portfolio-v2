@@ -1,5 +1,24 @@
 export const featuredProjects = [
   {
+    title: "StockFlow",
+
+    description:
+      "A full-stack inventory and sales management system featuring JWT authentication, product management, stock tracking, sales transactions, dashboard analytics, reports, and role-based admin access.",
+
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+    ],
+
+    github: "https://github.com/kekedp11/stockflow",
+
+    demo: "https://stockflow-seven-gilt.vercel.app/",
+  },
+
+  {
     title: "E-Commerce",
 
     description:
