@@ -1,5 +1,25 @@
 export const featuredProjects = [
   {
+    title: "HelpDesk",
+
+    description:
+      "A full-stack help desk ticket management system built with TypeScript, featuring JWT authentication, role-based access control for users, agents, and admins, ticket management, status updates, and agent assignment.",
+
+    tech: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+    ],
+
+    github: "https://github.com/kekedp11/helpdesk",
+
+    demo: "https://helpdesk-gold-omega.vercel.app/login",
+  },
+
+  {
     title: "StockFlow",
 
     description:
