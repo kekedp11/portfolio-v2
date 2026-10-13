@@ -16,7 +16,7 @@ export const featuredProjects = [
 
     github: "https://github.com/kekedp11/helpdesk",
 
-    demo: "https://helpdesk-gold-omega.vercel.app/login",
+    demo: "https://helpdesk-gold-omega.vercel.app/",
   },
 
   {
